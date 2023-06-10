@@ -113,15 +113,94 @@ int main()
 //cout << i << endl;
 
 
-int i , n , x = 0;
-cin >> n;
-for (i=1 ; i<=n ; i++)
-if (n % i == 0)
-x++;
-if (x == 2)
-cout << "aval ast" << endl;
-else
-cout << "aval nist" << endl;
+//int i , n , x = 0;
+//cin >> n;
+//for (i=1 ; i<=n ; i++)
+//if (n % i == 0)
+//x++;
+//if (x == 2)
+//cout << "aval ast" << endl;
+//else
+//cout << "aval nist" << endl;
+
+
+//int i , sum=0, n;
+//float ave;
+//cin>>n;
+//for (i=1 ; i<=n ; i++)
+//{
+//cout << "enter number" << i << ":";
+//cin >> n;
+//sum = sum + n;
+//}
+//ave = (float)sum / n;
+//cout << "the average is:"<< ave;
+
+
+//int i=2 , n;
+//cin >> n;
+//while (i <= n )
+//{
+//cout << i << endl;
+//i = i + 2; 
+//}
+
+
+//int n = 0 , sum = 0 , i = 1;
+//cin >> n;
+//while (n != 0)
+//{
+//cin >> n;
+//sum = sum + n;
+//i++;
+//}
+//cout << sum << "\n" << sum / i;
+//what is wrong with this code?
+
+
+//int n , x , sum = 0;
+//cin >> n;
+//while (n != 0)
+//{
+//x = n % 10;
+//n = n / 10;
+//sum = sum + x;
+//}
+//cout << sum;
+
+
+//int n , f=0 , z=0 , x;
+//cin >> n;
+//while (n != 0)
+//{
+//x = n % 10;
+//n = n / 10;
+//if(x % 2 == 0)
+//{
+//z++;
+//}
+//else
+//{
+//f++;
+//}
+//}
+//cout << z << endl << f;
+
+
+int x, sum=0, n=0;
+char ans='y';
+while (ans=='y')
+{
+cout << "enter a number:";
+cin >> x;
+sum = sum + x * x;
+n++;
+cout << "do you want to continue?(y/n):";
+cin >> ans;
+}
+cout << "you entered" << n << "numbers" << endl;
+cout << "sum of square is :" << sum;
+
 
 
 
