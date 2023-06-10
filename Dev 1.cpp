@@ -58,29 +58,70 @@ int main()
 //cout<<avg;
 
 
-int n,i,j ;
-cin>>n;
-for (i=0; i<n; i++)
-cout<<"*";
-cout<<"\n";
-for (i=0 ; i<n-2; i++)
-{
-cout<<"*";
-for (j=0 ; j<n-2; j++)
-cout<<" " ;
-cout<<"*\n" ;
-}
-for (i=0; i<n; i++)
-cout<<"*";
+//int n,i,j ;
+//cin>>n;
+//for (i=0; i<n; i++)
+//cout<<"*";
+//cout<<"\n";
+//for (i=0 ; i<n-2; i++)
+//{
+//cout<<"*";
+//for (j=0 ; j<n-2; j++)
+//cout<<" " ;
+//cout<<"*\n" ;
+//}
+//for (i=0; i<n; i++)
+//cout<<"*";
 
 
+//int n, i;
+//cin >> n;
+//for (i=0 ; i<n ; i+=2)
+//cout << i << endl;
 
 
+//int n , i , sum = 0;
+//cin >> n;
+//for (i=1 ; i<=n ; i++){
+//	sum = sum + i;
+//}
+//cout<<"sumt is :"<<sum<<"\n"<<"avg is :"<<sum/n;
 
 
+//int n , i , f =1;
+//cout<<"Enter a number :"<<"\n";
+//cin >> n;
+//for (i = 1 ; i <= n ; i++){
+//	f*=i;
+//}
+//cout << f;
 
 
+//int i, sum = 0 , x;
+//for(i=1 ; i<=7 ; i++)
+//{
+//cin >> x ;
+//sum = sum + x;
+//}
+//cout << sum << endl << float (sum) / 7;
 
+
+//int n , i;
+//cin >> n;
+//for (i=1 ; i<=n ; i++)
+//if (n % i == 0)
+//cout << i << endl;
+
+
+int i , n , x = 0;
+cin >> n;
+for (i=1 ; i<=n ; i++)
+if (n % i == 0)
+x++;
+if (x == 2)
+cout << "aval ast" << endl;
+else
+cout << "aval nist" << endl;
 
 
 
