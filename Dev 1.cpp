@@ -391,25 +391,46 @@ using namespace std;
 //}}
 
 
-void sign (int x)
+//void sign (int x)
+//{
+//if(x < 0)
+//cout <<"The number is less than zero ! ";
+//if(x == 0)
+//cout <<"The number is zero ! ";
+//else
+//cout <<"The number is greater than zero ! ";
+//return ;
+//}
+//int main()
+//{
+//int a;
+//cout <<"Enter a number: " ;
+//cin >>a;
+//sign(a);
+//}
+
+
+int f1( int a )
+{ 
+return a *= a;
+}
+void f2( int &b )
 {
-if(x < 0)
-cout <<"The number is less than zero ! ";
-if(x == 0)
-cout <<"The number is zero ! ";
-else
-cout <<"The number is greater than zero ! ";
-return ;
+b*= b;
 }
 int main()
-{
-int a;
-cout <<"Enter a number: " ;
-cin >>a;
-sign(a);
-getch();
-return 0;
-}
+{ 
+int x = 2, y = 4;
+cout << "x = " << x << " before pass By Value\n"
+<< "Value returned by pass By Value: "
+<< f1(x) << endl
+<< "x = " << x << "after pass By Value\n" << endl;
+//********
+cout << "y = " << y << " before pass By Reference" <<
+endl;
+f2(y);
+cout << "y = " << y << " after pass By Reference" <<
+endl;}
 
 
 
