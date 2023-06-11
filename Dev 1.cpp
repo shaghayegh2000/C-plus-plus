@@ -187,19 +187,68 @@ int main()
 //cout << z << endl << f;
 
 
-int x, sum=0, n=0;
-char ans='y';
-while (ans=='y')
+//int x, sum=0, n=0;
+//char ans='y';
+//while (ans=='y')
+//{
+//cout << "enter a number:";
+//cin >> x;
+//sum = sum + x * x;
+//n++;
+//cout << "do you want to continue?(y/n):";
+//cin >> ans;
+//}
+//cout << "you entered" << n << "numbers" << endl;
+//cout << "sum of square is :" << sum;
+
+
+//int a[30] , i , n;
+//cout << "how long is your arrey?\n";
+//cin >> n;
+//cout << "start\n";
+//for (i=0 ; i<=n-1 ; i++)
+//cin >> a[i];
+//for( i=0 ; i<=n-1; i++)
+//cout << a[i] << "*";
+
+
+//int a[40] , i , n;
+//cout << "how long is your arrey?\n";
+//cin >> n;
+//cout << "start\n";
+//for(i = 0 ; i <= n-1 ; i++)
+//cin >> a[i];
+//for(i = n-1 ; i >= 0 ; i--)
+//cout << a[i] << '\t';
+
+
+int a[30] , b[30] , i , n , sum = 0;
+float avg;
+cin >> n;
+for(i=0 ; i <= n-1 ; i++)
 {
-cout << "enter a number:";
-cin >> x;
-sum = sum + x * x;
-n++;
-cout << "do you want to continue?(y/n):";
-cin >> ans;
+cin >> a[i];
+sum = sum + a[i];
 }
-cout << "you entered" << n << "numbers" << endl;
-cout << "sum of square is :" << sum;
+avg = sum / n;
+for(i=0 ; i <= n-1; i++)
+{
+if (a[i] > avg)
+b[i] = 1;
+else
+if (a[i] < avg)
+b[i] = -1;
+else
+if (a[i] == avg)
+b[i] = 0;
+}
+cout << "result is" << endl;
+for(i=0 ; i <= n-1; i++)
+cout << b[i] << '\t';
+
+
+
+
 
 
 
