@@ -410,27 +410,43 @@ using namespace std;
 //}
 
 
-int f1( int a )
-{ 
-return a *= a;
-}
-void f2( int &b )
+//int f1( int a )
+//{ 
+//return a *= a;
+//}
+//void f2( int &b )
+//{
+//b*= b;
+//}
+//int main()
+//{ 
+//int x = 2, y = 4;
+//cout << "x = " << x << " before pass By Value\n"
+//<< "Value returned by pass By Value: "
+//<< f1(x) << endl
+//<< "x = " << x << "after pass By Value\n" << endl;
+////********
+//cout << "y = " << y << " before pass By Reference" <<
+//endl;
+//f2(y);
+//cout << "y = " << y << " after pass By Reference" <<
+//endl;}
+
+
+void f (int &a)
 {
-b*= b;
+a = a * 2;
 }
 int main()
-{ 
-int x = 2, y = 4;
-cout << "x = " << x << " before pass By Value\n"
-<< "Value returned by pass By Value: "
-<< f1(x) << endl
-<< "x = " << x << "after pass By Value\n" << endl;
-//********
-cout << "y = " << y << " before pass By Reference" <<
-endl;
-f2(y);
-cout << "y = " << y << " after pass By Reference" <<
-endl;}
+{
+int x;
+cout <<"Enter a number: ";
+cin >>x;
+f(x);
+cout<<"result is : " <<x;
+getch();
+return 0;
+}
 
 
 
