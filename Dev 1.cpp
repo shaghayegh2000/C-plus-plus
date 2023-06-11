@@ -222,29 +222,55 @@ int main()
 //cout << a[i] << '\t';
 
 
-int a[30] , b[30] , i , n , sum = 0;
-float avg;
+//int a[30] , b[30] , i , n , sum = 0;
+//float avg;
+//cin >> n;
+//for(i=0 ; i <= n-1 ; i++)
+//{
+//cin >> a[i];
+//sum = sum + a[i];
+//}
+//avg = sum / n;
+//for(i=0 ; i <= n-1; i++)
+//{
+//if (a[i] > avg)
+//b[i] = 1;
+//else
+//if (a[i] < avg)
+//b[i] = -1;
+//else
+//if (a[i] == avg)
+//b[i] = 0;
+//}
+//cout << "result is" << endl;
+//for(i=0 ; i <= n-1; i++)
+//cout << b[i] << '\t';
+
+
+int a[30] , b[30] , c[30] , d[30] , i , n;
 cin >> n;
-for(i=0 ; i <= n-1 ; i++)
-{
+cout<< "array a" << endl;
+for(i = 0; i <= n-1 ; i++)
 cin >> a[i];
-sum = sum + a[i];
-}
-avg = sum / n;
-for(i=0 ; i <= n-1; i++)
+cout<< "array b" << endl;
+for(i = 0 ; i <= n-1 ; i++)
+cin >> b[i];
+for(i = 0 ; i <= n-1 ; i++)
 {
-if (a[i] > avg)
-b[i] = 1;
+c[i] = a[i] + b[i];
+if(a[i]>b[i])
+d[i] = a[i] - b[i];
 else
-if (a[i] < avg)
-b[i] = -1;
-else
-if (a[i] == avg)
-b[i] = 0;
+d[i] = b[i] - a[i];
 }
-cout << "result is" << endl;
-for(i=0 ; i <= n-1; i++)
-cout << b[i] << '\t';
+cout<< "array c" << endl;
+for(i = 0 ; i <= n-1; i++)
+cout << c[i] << '\t';
+cout<< endl;
+cout<< "array d" << endl;
+for(i= 0 ; i <= n-1; i++)
+cout << d[i] << '\t';
+
 
 
 
