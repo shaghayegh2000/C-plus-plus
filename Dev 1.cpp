@@ -321,9 +321,9 @@
 
 
 
-#include <iostream>
-#include <conio.h>
-using namespace std;
+//#include <iostream>
+//#include <conio.h>
+//using namespace std;
 //int sqr(int x)
 //{
 //return x * x;
@@ -433,24 +433,83 @@ using namespace std;
 //endl;}
 
 
-void f (int &a)
-{
-a = a * 2;
+//void f (int &a)
+//{
+//a = a * 2;
+//}
+//int main()
+//{
+//int x;
+//cout <<"Enter a number: ";
+//cin >>x;
+//f(x);
+//cout<<"result is : " <<x;
+//getch();
+//return 0;
+//}
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+//****takind two numbers and sum and subtraction their square : ****
+//int main(){
+//	float a , b , c;
+//	cout<<"Enter 2 numbers :"<<"\n";
+//	cout<<"Number 1 :";
+//	cin>>a;
+//	cout<<"Number 2 :";
+//	cin>>b;
+//	c = float(a*a+b*b);
+//	cout<<"The SUM is :"<<c<<endl;
+//	if (a>b & a>-b){
+//		c = float(a*a-b*b);
+//		cout<<"The subtraction is :"<<c;
+//	}
+//	else if(b<0 & a>0 & b<-a){
+//		c = float(b*b-a*a);
+//		cout<<"The subtraction is :"<<c;
+//	}
+//	else if(b>0 & a<0 & a<-b){
+//		c = float(b*b-a*a);
+//		cout<<"The subtraction is :"<<c;
+//	}
+//	else if(b<0 & a<0 & b<a){
+//		c = float(b*b-a*a);
+//		cout<<"The subtraction is :"<<c;
+//	}
+//	else if(b<0 & a<0 & b>a){
+//		c = float(a*a-b*b);
+//		cout<<"The subtraction is :"<<c;
+//	}
+//	else if(b=0 || a=0){
+//		c = float(a*a+b*b);
+//		cout<<"The subtraction is :"<<c;
+//	}
+//	
+//}
+
+
+
+//****calculate the sum of the digits of a two-digit number : ****
+//int main(){
+//	int x , y , n ;
+//	cout<<"Enter a number :"<<"\n";
+//	cin>>x;
+//	y = x/10;
+//	n = x%10;
+//	cout << n+y;
+//}
+
+
+//****Read the character from the input and print it on the screen : ****
+int main(){
+	char ch;
+	cout<<"Enter character"<<"\n";
+	ch = cin.get();
+	cout<<"This is :    "<<ch;
+	getch();
+    return 0;
 }
-int main()
-{
-int x;
-cout <<"Enter a number: ";
-cin >>x;
-f(x);
-cout<<"result is : " <<x;
-getch();
-return 0;
-}
-
-
-
-
 
 
 
