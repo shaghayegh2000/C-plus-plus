@@ -539,13 +539,75 @@ using namespace std;
 
 
 //**** Even numbers smaller than n : ****
+//int main(){
+//	int n , i;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>n;
+//	for(i=2 ; i<n ; i+=2)
+//	cout<<i<<"\n";	
+//}
+
+
+
+//**** Sum and average of numbers 1 to n : ****
+//int main(){
+//	int n , i , sum=0 , avg ;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>n;
+//	for(i=1 ; i<=n ; i++)
+//	sum+=i;
+//	cout<<"The SUM is : "<<sum<<"\n";
+//	avg = sum/n;
+//	cout<<"The average is : "<<avg;
+//}
+
+
+
+//**** Factorial of a number : ****
+//int main(){
+//	int a , f=1 ,i ;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>a ;
+//	for(i=1 ; i<=a ; i++)
+//	f*=i;  
+//	cout<<"Factorial is : "<<f;
+//}
+
+
+
+//**** Divisors of a number : ****
+//int main(){
+//	int a , i ;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>a ;
+//	cout<<"Divisors are : ";
+//	for(i=1 ; i<=a ; i++)
+//	if(a%i==0)
+//	cout<<"\n"<<i<<"\n";
+//}
+
+
+
+//**** Is it a prime number or not? ****
 int main(){
-	int n , i;
+	int a , i , q=0 ;
 	cout<<"Enter a Number : "<<"\n";
-	cin>>n;
-	for(i=0 ; i<n ; i+=2)
-	cout<<i<<"\n";	
+	cin>>a ;	
+	for(i=1 ; i<=a ; i++)
+	if(a/i==0)
+	q++;
+	if(q==2)
+	cout<<"The number is prime!"<<"\n";
+	else
+	cout<<"The number is not prime";
 }
+
+
+
+
+
+
+
 
 
 
