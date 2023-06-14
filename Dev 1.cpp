@@ -546,6 +546,17 @@ using namespace std;
 //	for(i=2 ; i<n ; i+=2)
 //	cout<<i<<"\n";	
 //}
+//another way :
+int main(){
+	int n , i=0 ;
+	cout<<"Enter a Number : "<<"\n";
+	cin>>n;
+	while(i<=n){	
+	cout<<i<<"\n";			
+ 	i+=2;
+	}
+
+}
 
 
 
@@ -589,18 +600,39 @@ using namespace std;
 
 
 //**** Is it a prime number or not? ****
-int main(){
-	int a , i , q=0 ;
-	cout<<"Enter a Number : "<<"\n";
-	cin>>a ;	
-	for(i=1 ; i<=a ; i++)
-	if(a/i==0)
-	q++;
-	if(q==2)
-	cout<<"The number is prime!"<<"\n";
-	else
-	cout<<"The number is not prime";
-}
+//int main(){
+//	int a , i , q=0 ;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>a ;	
+//	for(i=1 ; i<=a ; i++)
+//	if(a/i==0)
+//	q++;
+//	if(q==2)
+//	cout<<"The number is prime!"<<"\n";
+//	else
+//	cout<<"The number is not prime";
+//}
+
+
+
+//**** The average of n numbers : ****
+//int main(){
+//	int n , i , avg , num , sum=0 ;
+//	cout<<"how many numbers ?"<<"\n";
+//	cin>>n;
+//	cout<<"Enter your nums"<<"\n";
+//	for(i=1 ; i<=n ; i++){
+//		cin>>num;
+//		sum+=num;
+//		avg = sum/n;
+//	}
+//	cout<<"The SUM is : "<<sum<<"\n";		
+//	cout<<"The AVG is : "<<avg;		
+//}
+
+
+
+
 
 
 
