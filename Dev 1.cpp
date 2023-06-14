@@ -502,14 +502,65 @@ using namespace std;
 
 
 //****Read the character from the input and print it on the screen : ****
+//int main(){
+//	char ch;
+//	cout<<"Enter character"<<"\n";
+//	ch = cin.get();
+//	cout<<"This is : "<<ch;
+//	getch();
+//    return 0;
+//}
+
+
+
+//**** three whole numbers and their decimal average : ****
+//int main(){
+//	float a , b , c , avg;
+//	cout<<"Enter 3 numbers"<<"\n";
+//	cin>>a>>b>>c;
+//	avg = float(a+b+c)/3;
+//	cout<<"The average is : "<<avg;
+//}
+
+
+
+//**** whether a number is even or odd  ****
+//int main(){
+//	int a ;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>a;
+//	if(a%2==0)
+//	cout<<"It is even!";
+//	else
+//	cout<<"It is odd!";
+//
+//}
+
+
+
+//**** Even numbers smaller than n : ****
 int main(){
-	char ch;
-	cout<<"Enter character"<<"\n";
-	ch = cin.get();
-	cout<<"This is :    "<<ch;
-	getch();
-    return 0;
+	int n , i;
+	cout<<"Enter a Number : "<<"\n";
+	cin>>n;
+	for(i=0 ; i<n ; i+=2)
+	cout<<i<<"\n";	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
