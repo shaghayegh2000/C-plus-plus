@@ -648,22 +648,39 @@ using namespace std;
 
 
 //****The number of even and odd digits of a number : ****
+//int main(){
+//	int a , o=0 , e=0 , x;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>a ;
+//	while(a!=0){
+//		x = a%10 ;
+//		a/=10 ;
+//		if(x%2==0){
+//			e++;
+//		}else{
+//			o++;
+//		}
+//	}
+//	cout<<"The nums of evens : "<<e<<"\n";
+//	cout<<"The nums of odds : "<<o;
+//}
+
+
+
+//**** Read some numbers and calculate the sum of their squares and output along with the number of numbers : ****
 int main(){
-	int a , o=0 , e=0 , x;
-	cout<<"Enter a Number : "<<"\n";
-	cin>>a ;
-	while(a!=0){
-		x = a%10 ;
-		a/=10 ;
-		if(x%2==0){
-			e++;
-		}else{
-			o++;
-		}
+	int n , sum=0 , i=1 , x;
+	cout<<"How many Numbers do you enter ? "<<"\n";
+	cin>>n ;
+	while(i<=n){
+	cout<<"number"<<
+	i<<"\n";
+	cin>>x;
+	i++;
+	sum+=x*x;
 	}
-	cout<<"The nums of evens : "<<e<<"\n";
-	cout<<"The nums of odds : "<<o;
-	
+	cout<<"you entered "<<n<<" numbers and"<<"\n";
+	cout<<"the SUM is : "<<sum;
 }
 
 
