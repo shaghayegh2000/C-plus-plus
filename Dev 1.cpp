@@ -547,16 +547,16 @@ using namespace std;
 //	cout<<i<<"\n";	
 //}
 //another way :
-int main(){
-	int n , i=0 ;
-	cout<<"Enter a Number : "<<"\n";
-	cin>>n;
-	while(i<=n){	
-	cout<<i<<"\n";			
- 	i+=2;
-	}
-
-}
+//int main(){
+//	int n , i=0 ;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>n;
+//	while(i<=n){	
+//	cout<<i<<"\n";			
+// 	i+=2;
+//	}
+//
+//}
 
 
 
@@ -630,6 +630,41 @@ int main(){
 //	cout<<"The AVG is : "<<avg;		
 //}
 
+
+
+//**** The sum of the digits of an arbitrary number : ****
+//int main() {
+//	int a , sum=0 , x;
+//	cout<<"Enter a Number : "<<"\n";
+//	cin>>a ;
+//	while(a!=0){
+//		x = a%10;
+//		a/=10;
+//		sum+=x;
+//	}
+//	cout<<"The SUM is"<<sum;
+//}
+
+
+
+//****The number of even and odd digits of a number : ****
+int main(){
+	int a , o=0 , e=0 , x;
+	cout<<"Enter a Number : "<<"\n";
+	cin>>a ;
+	while(a!=0){
+		x = a%10 ;
+		a/=10 ;
+		if(x%2==0){
+			e++;
+		}else{
+			o++;
+		}
+	}
+	cout<<"The nums of evens : "<<e<<"\n";
+	cout<<"The nums of odds : "<<o;
+	
+}
 
 
 
