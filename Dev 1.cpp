@@ -668,21 +668,58 @@ using namespace std;
 
 
 //**** Read some numbers and calculate the sum of their squares and output along with the number of numbers : ****
-int main(){
-	int n , sum=0 , i=1 , x;
-	cout<<"How many Numbers do you enter ? "<<"\n";
-	cin>>n ;
-	while(i<=n){
-	cout<<"number"<<
-	i<<"\n";
-	cin>>x;
-	i++;
-	sum+=x*x;
-	}
-	cout<<"you entered "<<n<<" numbers and"<<"\n";
-	cout<<"the SUM is : "<<sum;
-}
+//int main(){
+//	int n , sum=0 , i=1 , x;
+//	cout<<"How many Numbers do you enter ? "<<"\n";
+//	cin>>n ;
+//	while(i<=n){
+//	cout<<"number"<<
+//	i<<"\n";
+//	cin>>x;
+//	i++;
+//	sum+=x*x;
+//	}
+//	cout<<"you entered "<<n<<" numbers and"<<"\n";
+//	cout<<"the SUM is : "<<sum;
+//}
 
+
+
+//**** Ask the user for the grades of a student if the user Enter a negative score, ask him to enter the correct score and then the average scoreto count : ****
+//int main() {
+//	int mark , n , sum = 0 , i ;
+//	float avg ;
+//	char ch ;
+//	cout<<"Enter how many marks : ";
+//	cin>>n ;
+//	cout<<"please enter your marks : \n";
+//	for(i=1 ; i<=n ; i++){
+////		cout<<"please enter your marks : ";
+//		do{
+//			cin>>mark;
+//			if(mark<0)
+//	cout<<"enter correct number!!!\n";	
+//		}
+//		while(mark<0);
+//		sum+=mark;	
+//	}
+//
+//	avg = float(sum)/n;
+//	cout<<"\n the average is : "<<avg;
+//}
+
+
+
+//**** Take the number of the month and display the number of days : ****
+int main(){
+	int n ;
+	cout<<"enter the number of month : \n";
+	cin>>n;
+	if(n>6)
+	cout<<"this month has 30 days!\n";
+	else 
+	cout<<"this month has 31 days!";
+}
 
 
 
