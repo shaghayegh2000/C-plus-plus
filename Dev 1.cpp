@@ -757,12 +757,76 @@ using namespace std;
 
 
 
+//int main(){
+//	float sum , i ;
+//	for(i=1 ; i<=100 ; i++){
+//		sum = sum + float(1/i) ;
+//	}
+//	cout<<"The SUM is : "<<sum;
+//}
+
+
+
+//**** Print an asterisk between the elements of an n-member array : ****
+//int main(){
+//	int a[100] , i , n ;
+//	cout<<"how many nums do you have? \n";
+//	cin>>n;
+//	cout<<"Enter your nums :"<<"\n";
+//	for(i=1 ; i<=n ; i++){
+//		cin>>a[i];
+//	}
+//	cout<<"*";
+//	for(i=1 ; i<=n ; i++){
+//		cout<<a[i]<<"*";
+//	}	
+////	if(i=n){
+////		cout<<a[n];
+////	}
+//}
+
+
+
+//**** Print the elements of an array in reverse order : ****
+//int main(){
+//	int a[100] , i , n ;
+//	cout<<"how many nums do you enter ? \n";
+//	cin>>n;
+//	cout<<"enter nums : \n";
+//	for(i=1 ; i<=n ; i++){
+//		cin>>a[i];
+//	}
+//	for(i=n ; i>=1 ; i--)
+//	cout<<a[i]<<"\t";	
+//}
+
+
+
+//**** The average of the elements of an array : ****
 int main(){
-	float sum , i ;
-	for(i=1 ; i<=100 ; i++){
-		sum = sum + float(1/i) ;
+	int a[100] ,b[100] , n , i , sum=0 ;
+	float avg ;
+	cout<<"how many nums do you enter?\n";
+	cin>>n;
+	cout<<"enter nums : \n";
+	for(i=1 ; i<=n ; i++){
+		cin>>a[i];
+		sum+=a[i];
 	}
-	cout<<"The SUM is : "<<sum;
+	avg = (sum)/n;
+	cout<<"average is : "<<avg<<"\n";
+	for(i=1 ; i<=n ; i++)
+	{
+	if(a[i]>avg)
+	b[i]=1;
+	else if(a[i]<0)
+	b[i]=-1;
+	else if(a[i]==avg)
+	b[i]=0;
+	}
+	cout<<"The result is : \n";
+	for(i=1 ; i<=n ; i++)
+	cout<<b[i]<<"\t";
 }
 
 
