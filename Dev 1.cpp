@@ -711,17 +711,59 @@ using namespace std;
 
 
 //**** Take the number of the month and display the number of days : ****
+//int main(){
+//	int n ;
+//	cout<<"enter the number of month : \n";
+//	cin>>n;
+//	if(n>6)
+//	cout<<"this month has 30 days!\n";
+//	else 
+//	cout<<"this month has 31 days!";
+//}
+
+
+
+//**** All three-digit odd numbers : ****
+//int main(){
+//	int o=101;
+////	while(o<1000){
+////		cout<<o<<endl;
+////		o+=2;
+////	}
+//	
+//	do{
+//		cout<<o<<endl;
+//		o+=2;
+//	}
+//	while(o<1000);
+//}
+
+
+
+//**** take the averages of 10 students and then the biggest one Show average : ****
+//int main(){
+//	int i ;
+//	float mark[100];
+//	cout<<"enter the marks : \n";
+//	for(i=1 ; i<=100 ; i++){
+//		cin>>mark[i];
+//	}
+//	for(i=1 ; i<=100 ; i++){
+//		if(mark[1]<mark[i])
+//		mark[1]=mark[i];
+//	}
+//	cout<<"The highest score is : "<<mark[1];
+//}
+
+
+
 int main(){
-	int n ;
-	cout<<"enter the number of month : \n";
-	cin>>n;
-	if(n>6)
-	cout<<"this month has 30 days!\n";
-	else 
-	cout<<"this month has 31 days!";
+	float sum , i ;
+	for(i=1 ; i<=100 ; i++){
+		sum = sum + float(1/i) ;
+	}
+	cout<<"The SUM is : "<<sum;
 }
-
-
 
 
 
