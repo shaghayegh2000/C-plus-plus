@@ -450,6 +450,7 @@
 
 #include <iostream>
 #include <conio.h>
+#include<string.h>
 using namespace std;
 //****takind two numbers and sum and subtraction their square : ****
 //int main(){
@@ -900,14 +901,40 @@ using namespace std;
 
 
 //**** Get the name of the student and print it in the output : ****
+//int main()
+//{
+//char name[20];
+//cout <<"enter name:";
+//cin >> name;
+//cout << "your name is:"<< name;
+//}
+
+
+
+//**** Take a string and print the length of the string : ****
+//int main()
+//{
+//char a[64];
+//int i;
+//cout <<"enter a string:";
+//cin >> a;
+//for(i=0 ; a[i] != '\0' ; i++)
+//cout << "size of string:"<< i<<endl;
+//}
+
+
+
+//**** Get a string and the length of the string with the help of the strlen() function Print on the output : ****
 int main()
 {
-char name [20];
-cout <<"enter name:";
-cin >> name;
-cout << "your name is:"<< name;
-}
+char a[10];
+int len=0;
+cout<<"enter a string:";
+cin >> a;
+len = strlen(a);
+cout<< "string length : "<< len;
 
+}
 
 
 
