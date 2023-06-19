@@ -925,19 +925,73 @@ using namespace std;
 
 
 //**** Get a string and the length of the string with the help of the strlen() function Print on the output : ****
-int main()
-{
-char a[10];
-int len=0;
-cout<<"enter a string:";
-cin >> a;
-len = strlen(a);
-cout<< "string length : "<< len;
+//int main()
+//{
+//char a[10];
+//int len=0;
+//cout<<"enter a string:";
+//cin >> a;
+//len = strlen(a);
+//cout<< "string length : "<< len;
+//}
 
+
+
+//int main()
+//{
+//char a[10] = "black" , b[10] = "board";
+//strcat (a,b);
+//cout <<"result is:" << a;
+//}
+
+
+
+// **** There is a function that returns a number as take input and return its square : ****
+//int sqr(int x)
+//{
+//return x * x;
+//}
+//int main()
+//{
+//int a;
+//cin >> a;
+//cout << sqr(a);
+//}
+
+
+
+//*** return max of two x and y values...using the maximum function : ****
+//int max(int x, int y)
+//{
+//int big;
+//if (x > y)
+//big = x;
+//else
+//big = y;
+//return big;
+//}
+//int main()
+//{
+//int a , b;
+//cout << "enter 2 numbers:" << endl;
+//cin >> a >> b;
+//cout << "the max is=" << max(a , b) << endl;
+//getch();
+//return 0;
+//}
+
+
+
+//**** Use the square function to print the numbers 1 to 10 in the output : ****
+int square(int x){
+	return x*x ;
 }
-
-
-
+int main(){
+	int i;
+	for(i=1 ; i<=10 ; i++){
+		cout<<square(i)<<endl;
+	}
+}
 
 
 
