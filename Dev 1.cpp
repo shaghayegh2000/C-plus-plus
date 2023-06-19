@@ -743,7 +743,7 @@ using namespace std;
 //**** take the averages of 10 students and then the biggest one Show average : ****
 //int main(){
 //	int i ;
-//	float mark[100];
+//	int mark[100];
 //	cout<<"enter the marks : \n";
 //	for(i=1 ; i<=100 ; i++){
 //		cin>>mark[i];
@@ -776,13 +776,13 @@ using namespace std;
 //	for(i=1 ; i<=n ; i++){
 //		cin>>a[i];
 //	}
-//	cout<<"*";
-//	for(i=1 ; i<=n ; i++){
+////	cout<<"*";
+//	for(i=1 ; i<=n-1 ; i++){
 //		cout<<a[i]<<"*";
 //	}	
-////	if(i=n){
-////		cout<<a[n];
-////	}
+//	if(i=n){
+//		cout<<a[n];
+//	}
 //}
 
 
@@ -803,32 +803,57 @@ using namespace std;
 
 
 //**** The average of the elements of an array : ****
-int main(){
-	int a[100] ,b[100] , n , i , sum=0 ;
-	float avg ;
-	cout<<"how many nums do you enter?\n";
-	cin>>n;
-	cout<<"enter nums : \n";
-	for(i=1 ; i<=n ; i++){
-		cin>>a[i];
-		sum+=a[i];
-	}
-	avg = (sum)/n;
-	cout<<"average is : "<<avg<<"\n";
-	for(i=1 ; i<=n ; i++)
-	{
-	if(a[i]>avg)
-	b[i]=1;
-	else if(a[i]<0)
-	b[i]=-1;
-	else if(a[i]==avg)
-	b[i]=0;
-	}
-	cout<<"The result is : \n";
-	for(i=1 ; i<=n ; i++)
-	cout<<b[i]<<"\t";
-}
+//int main(){
+//	int a[100] ,b[100] , n , i , sum=0 ;
+//	float avg ;
+//	cout<<"how many nums do you enter?\n";
+//	cin>>n;
+//	cout<<"enter nums : \n";
+//	for(i=1 ; i<=n ; i++){
+//		cin>>a[i];
+//		sum+=a[i];
+//	}
+//	avg = (sum)/n;
+//	cout<<"average is : "<<avg<<"\n";
+//	for(i=1 ; i<=n ; i++)
+//	{
+//	if(a[i]>avg)
+//	b[i]=1;
+//	else if(a[i]<0)
+//	b[i]=-1;
+//	else if(a[i]==avg)
+//	b[i]=0;
+//	}
+//	cout<<"The result is : \n";
+//	for(i=1 ; i<=n ; i++)
+//	cout<<b[i]<<"\t";
+//}
 
+
+
+int main()
+{
+int a[30] , b[30] , c[30] , d[30] , i , n;
+cin >> n;
+for(i = 0; i <= n-1 ; i++)
+cin >> a[i];
+for(i = 0 ; i <= n-1 ; i++)
+cin >> b[i];
+for(i = 0 ; i <= n-1 ; i++)
+{
+c[i] = a[i] + b[i];
+d[i] = a[i] - b[i];
+}
+cout<< "array c" << endl;
+for(i = 0 ; i <= n-1; i++)
+cout << c[i] << '\t';
+cout<< endl;
+cout<< "array d" << endl;
+for(i= 0 ; i <= n-1; i++)
+cout << d[i] << '\t';
+getch();
+return 0;
+}
 
 
 
