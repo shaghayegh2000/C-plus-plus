@@ -831,33 +831,82 @@ using namespace std;
 
 
 
+//**** Sum and difference of two arrays : ****
+//int main()
+//{
+//int a[30] , b[30] , c[30] , d[30] , i , n;
+//cin >> n;
+//for(i = 0; i <= n-1 ; i++)
+//cin >> a[i];
+//for(i = 0 ; i <= n-1 ; i++)
+//cin >> b[i];
+//for(i = 0 ; i <= n-1 ; i++)
+//{
+//c[i] = a[i] + b[i];
+//d[i] = a[i] - b[i];
+//}
+//cout<< "array c" << endl;
+//for(i = 0 ; i <= n-1; i++)
+//cout << c[i] << '\t';
+//cout<< endl;
+//cout<< "array d" << endl;
+//for(i= 0 ; i <= n-1; i++)
+//cout << d[i] << '\t';
+//getch();
+//return 0;
+//}
+
+
+
+//**** Received b*c two-dimensional array : ****
+//int main()
+//{
+//int b , c ;
+//int a[30][30];
+//int i , j;
+//cin>>b>>c;
+//cout << "enter "<<b*c<<" number: \n";
+//for ( i = 0 ; i < b ; i++)
+//for (j = 0 ; j < c ; j++)
+//cin >> a [i][j];
+//cout << endl;
+//cout << "matrix: \n";
+//for ( i = 0 ; i < b ; i++)
+//{
+//for (j = 0 ; j < c ; j++)
+//cout << a[i][j] << "\t";
+//cout << "\n";
+//}
+//}
+
+
+
+// **** Multiplication table of multiplication of numbers : ****
+//int main()
+//{
+//int a[10][10];
+//int i , j;
+//for (i = 0 ; i < 10 ; i++)
+//for (j = 0 ; j < 10 ; j++)
+//a[i][j] = (i + 1) * (j + 1);
+//for (i = 0 ; i < 10 ; i++)
+//{
+//for (j = 0 ; j < 10 ; j++)
+//cout << a[i][j] << "\t";
+//cout << "\n";
+//}
+//}
+
+
+
+//**** Get the name of the student and print it in the output : ****
 int main()
 {
-int a[30] , b[30] , c[30] , d[30] , i , n;
-cin >> n;
-for(i = 0; i <= n-1 ; i++)
-cin >> a[i];
-for(i = 0 ; i <= n-1 ; i++)
-cin >> b[i];
-for(i = 0 ; i <= n-1 ; i++)
-{
-c[i] = a[i] + b[i];
-d[i] = a[i] - b[i];
+char name [20];
+cout <<"enter name:";
+cin >> name;
+cout << "your name is:"<< name;
 }
-cout<< "array c" << endl;
-for(i = 0 ; i <= n-1; i++)
-cout << c[i] << '\t';
-cout<< endl;
-cout<< "array d" << endl;
-for(i= 0 ; i <= n-1; i++)
-cout << d[i] << '\t';
-getch();
-return 0;
-}
-
-
-
-
 
 
 
