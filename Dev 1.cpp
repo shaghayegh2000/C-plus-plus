@@ -983,20 +983,107 @@ using namespace std;
 
 
 //**** Use the square function to print the numbers 1 to 10 in the output : ****
-int square(int x){
-	return x*x ;
+//int square(int x){
+//	return x*x ;
+//}
+//int main(){
+//	int i;
+//	for(i=1 ; i<=10 ; i++){
+//		cout<<square(i)<<endl;
+//	}
+//}
+
+
+
+
+//**** Print the prime numbers from 1 to 30 in the output using the function : ****
+//int aval(int x)
+//{ 
+//int w=0 , i;
+//for(i=1 ; i <= x ; i++)
+//{
+//if (x % i == 0)
+//w++;
+//}
+//if(w == 2)
+//return 1;
+//else
+//return 0;
+//}
+//int main()
+//{
+//int a,i;
+//for(i=1 ; i <=30 ; i++)
+//{
+//if(aval(i) == 1)
+//cout<< i<< endl;
+//}
+//}
+
+
+
+//****Take a number and specify it using the function is greater or less than zero  : ****
+//void sign (int x)
+//{
+//if(x < 0)
+//cout <<"The number is less than zero ! ";
+//else
+//cout <<"The number is greater than zero ! (Or equal) ";
+//return ;
+//}
+//int main(){
+//int a;
+//cout <<"Enter a number: " ;
+//cin >>a;
+//sign(a);
+//}
+
+
+#include <math.h>
+//**** Read the quadratic equation from the input, put them into the function Post and display responses : ****
+//int a , b , c , d ;
+//float x1 , x2 ;
+//int func( int a , int b , int c)
+//{
+//	d=b*b-4*a*c;
+//	return d;
+//}
+//int main(){
+//	cin>>a>>b>>c;
+//	cout<<func(a,b,c);
+//	if(d<0)
+//	cout<<"no answer!\n";
+//	else{
+//	x1 = (-b+sqrt(d))/(2*a);
+//	x2 = (-b-sqrt(d))/(2*a);
+//	}
+//	cout<<endl<<x1<<endl<<x2<<endl;
+//}
+
+
+
+//int a , b , c ;
+//int sq(int a , int b)
+//{
+//	c = pow(a , b);
+//	return c;
+//}
+//int main(){
+//	cin>>a>>b;
+//	cout<<sq(a,b);
+//}
+
+
+
+int z , j , a , b ;
+void num(int a , int b){
+	cout<<a*b<<endl<<a+b;
+	return;
 }
 int main(){
-	int i;
-	for(i=1 ; i<=10 ; i++){
-		cout<<square(i)<<endl;
-	}
+	cin>>a>>b;
+	num(a,b);
 }
-
-
-
-
-
 
 
 
